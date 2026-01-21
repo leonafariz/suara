@@ -118,8 +118,7 @@
   <div id="app-wrapper" class="h-full w-full nebula-bg relative overflow-hidden"><!-- Stars Background -->
    <div id="stars-container" class="absolute inset-0 pointer-events-none"></div><!-- Cosmic Dust -->
    <div id="dust-container" class="absolute inset-0 pointer-events-none"></div><!-- Main Content -->
-   <div class="relative h-full flex flex-col items-center justify-center px-4"><!-- Title -->
-    <h1 id="main-title" class="font-orbitron text-3xl md:text-5xl lg:text-6xl font-bold text-white text-glow tracking-wider mb-12 md:mb-20 text-center">Bicara dengan AI</h1><!-- Voice Visualizer Container -->
+   <div class="relative h-full flex flex-col items-center justify-center px-4"><!-- Voice Visualizer Container -->
     <div id="voice-container" class="relative flex items-center justify-center mb-12 md:mb-16"><!-- Pulse Rings -->
      <div class="voice-ring w-64 h-64 md:w-80 md:h-80" style="border-color: rgba(6, 182, 212, 0.4); animation-delay: 0s;"></div>
      <div class="voice-ring w-64 h-64 md:w-80 md:h-80" style="border-color: rgba(139, 92, 246, 0.3); animation-delay: 0.5s;"></div>
@@ -128,25 +127,22 @@
      <div class="core-glow absolute w-72 h-72 md:w-96 md:h-96 rounded-full"></div><!-- Orbital Particles -->
      <div class="orbital-particle" style="background: rgba(6, 182, 212, 0.8); animation-delay: 0s;"></div>
      <div class="orbital-particle" style="background: rgba(139, 92, 246, 0.8); animation-delay: -2.7s;"></div>
-     <div class="orbital-particle" style="background: rgba(6, 182, 212, 0.6); animation-delay: -5.3s;"></div><!-- Main Circle with Wave Visualizer -->
-     <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full border border-cyan-500/30 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center"><!-- Inner Gradient Border -->
-      <div class="absolute inset-2 rounded-full border border-purple-500/20"></div>
-      <div class="absolute inset-4 rounded-full border border-cyan-400/10"></div><!-- Sound Wave Bars -->
-      <div class="flex items-center justify-center gap-1 md:gap-1.5">
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 20px; animation-delay: 0s;"></div>
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 35px; animation-delay: 0.1s;"></div>
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 50px; animation-delay: 0.2s;"></div>
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 65px; animation-delay: 0.15s;"></div>
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 80px; animation-delay: 0.25s;"></div>
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 65px; animation-delay: 0.1s;"></div>
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 50px; animation-delay: 0.2s;"></div>
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 35px; animation-delay: 0.05s;"></div>
-       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full" style="height: 20px; animation-delay: 0.15s;"></div>
+     <div class="orbital-particle" style="background: rgba(6, 182, 212, 0.6); animation-delay: -5.3s;"></div><!-- Main Circle with Wave Visualizer --> <button id="voice-circle" class="relative w-48 h-48 md:w-64 md:h-64 rounded-full border border-cyan-500/30 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center cursor-pointer transition-all duration-300 hover:border-cyan-400/50 hover:scale-105"> <!-- Inner Gradient Border -->
+      <div class="absolute inset-2 rounded-full border border-purple-500/20 pointer-events-none"></div>
+      <div class="absolute inset-4 rounded-full border border-cyan-400/10 pointer-events-none"></div><!-- Sound Wave Bars -->
+      <div class="flex items-center justify-center gap-1 md:gap-1.5 pointer-events-none">
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
+       <div class="wave-bar w-1 md:w-1.5 bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full transition-all duration-75" style="height: 20px;"></div>
       </div><!-- Outer Ring Glow -->
-      <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-cyan-500/20 blur-sm"></div>
-     </div>
-    </div><!-- Status Text -->
-    <p id="status-text" class="font-rajdhani text-cyan-300/70 text-sm md:text-base tracking-widest uppercase mb-6 md:mb-8">Siap mendengarkan</p><!-- Call Button --> <button id="call-button" class="button-glow font-rajdhani text-lg md:text-xl font-semibold px-8 md:px-12 py-3 md:py-4 rounded-full bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/40 text-cyan-300 tracking-wider uppercase hover:text-white hover:border-cyan-400/60 transition-all duration-300"> Mulai Panggilan </button> <!-- Bottom Decorative Line -->
+      <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-cyan-500/20 blur-sm pointer-events-none"></div></button>
+    </div><!-- Bottom Decorative Line -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
      <div class="w-16 md:w-24 h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
      <div class="w-2 h-2 rounded-full bg-cyan-500/50"></div>
@@ -160,16 +156,11 @@
   </div>
   <script>
     const defaultConfig = {
-      main_title: 'Bicara dengan AI',
-      button_text: 'Mulai Panggilan',
-      status_text: 'Siap mendengarkan',
       primary_color: '#06b6d4',
       secondary_color: '#8b5cf6',
       background_color: '#020617',
       text_color: '#ffffff',
-      accent_color: '#67e8f9',
-      font_family: 'Orbitron',
-      font_size: 16
+      accent_color: '#67e8f9'
     };
 
     // Audio context and analyzer
@@ -256,35 +247,40 @@
       
       analyser.getByteFrequencyData(dataArray);
       
-      // Calculate average volume
+      // Calculate average volume to detect sound
       const average = dataArray.reduce((a, b) => a + b) / dataArray.length;
-      const normalizedVolume = average / 255;
+      const hasSound = average > 5; // Threshold for detecting sound
       
       const waveBars = document.querySelectorAll('.wave-bar');
-      waveBars.forEach((bar, index) => {
-        // Use different frequency ranges for each bar
-        const dataIndex = Math.floor((index / waveBars.length) * dataArray.length);
-        const value = dataArray[dataIndex] / 255;
-        
-        // Calculate height based on frequency data
-        const minHeight = 20;
-        const maxHeight = 100;
-        const height = minHeight + (value * (maxHeight - minHeight));
-        
-        bar.style.height = height + 'px';
-        
-        // Add intensity based on volume
-        const intensity = 0.5 + (normalizedVolume * 0.5);
-        bar.style.opacity = intensity;
-      });
+      
+      if (!hasSound) {
+        // No sound detected - keep bars at minimum height
+        waveBars.forEach(bar => {
+          bar.style.height = '20px';
+          bar.style.opacity = '0.6';
+        });
+      } else {
+        // Sound detected - animate bars based on frequency
+        waveBars.forEach((bar, index) => {
+          const dataIndex = Math.floor((index / waveBars.length) * dataArray.length);
+          const value = dataArray[dataIndex] / 255;
+          
+          // Calculate height based on frequency data
+          const minHeight = 20;
+          const maxHeight = 100;
+          const height = minHeight + (value * (maxHeight - minHeight));
+          
+          bar.style.height = height + 'px';
+          bar.style.opacity = '1';
+        });
+      }
       
       animationId = requestAnimationFrame(animateWaveBars);
     }
 
     // Button interaction
-    document.getElementById('call-button').addEventListener('click', async function() {
+    document.getElementById('voice-circle').addEventListener('click', async function() {
       const voiceContainer = document.getElementById('voice-container');
-      const statusText = document.getElementById('status-text');
       const button = this;
       
       isListening = !isListening;
@@ -293,41 +289,23 @@
         const micStarted = await startMicrophone();
         
         if (!micStarted) {
-          // Show error message
-          statusText.textContent = 'Akses mikrofon ditolak';
-          statusText.classList.add('text-red-400');
           isListening = false;
-          
-          setTimeout(() => {
-            statusText.textContent = window.elementSdk?.config?.status_text || defaultConfig.status_text;
-            statusText.classList.remove('text-red-400');
-          }, 3000);
-          
           return;
         }
         
         voiceContainer.classList.add('listening-active');
-        statusText.textContent = 'Mendengarkan...';
-        statusText.classList.add('text-cyan-400');
-        button.textContent = 'Akhiri Panggilan';
-        button.classList.add('border-red-500/50', 'text-red-300');
-        button.classList.remove('border-cyan-500/40', 'text-cyan-300');
+        button.classList.add('border-cyan-400/60', 'scale-105');
         
         animateWaveBars();
       } else {
         stopMicrophone();
         
         voiceContainer.classList.remove('listening-active');
-        statusText.textContent = window.elementSdk?.config?.status_text || defaultConfig.status_text;
-        statusText.classList.remove('text-cyan-400');
-        button.textContent = window.elementSdk?.config?.button_text || defaultConfig.button_text;
-        button.classList.remove('border-red-500/50', 'text-red-300');
-        button.classList.add('border-cyan-500/40', 'text-cyan-300');
+        button.classList.remove('border-cyan-400/60', 'scale-105');
         
         // Reset wave bars
-        document.querySelectorAll('.wave-bar').forEach((bar, index) => {
-          const heights = [20, 35, 50, 65, 80, 65, 50, 35, 20];
-          bar.style.height = heights[index] + 'px';
+        document.querySelectorAll('.wave-bar').forEach(bar => {
+          bar.style.height = '20px';
           bar.style.opacity = '1';
         });
       }
@@ -336,102 +314,6 @@
     // Initialize
     generateStars();
     generateDust();
-
-    // Element SDK
-    async function onConfigChange(config) {
-      const titleEl = document.getElementById('main-title');
-      const buttonEl = document.getElementById('call-button');
-      const statusEl = document.getElementById('status-text');
-      
-      titleEl.textContent = config.main_title || defaultConfig.main_title;
-      
-      if (!isListening) {
-        buttonEl.textContent = config.button_text || defaultConfig.button_text;
-        statusEl.textContent = config.status_text || defaultConfig.status_text;
-      }
-      
-      // Apply font
-      const customFont = config.font_family || defaultConfig.font_family;
-      titleEl.style.fontFamily = `${customFont}, Orbitron, sans-serif`;
-      
-      // Apply font size scaling
-      const baseSize = config.font_size || defaultConfig.font_size;
-      titleEl.style.fontSize = `${baseSize * 3}px`;
-    }
-
-    function mapToCapabilities(config) {
-      return {
-        recolorables: [
-          {
-            get: () => config.background_color || defaultConfig.background_color,
-            set: (value) => {
-              config.background_color = value;
-              window.elementSdk.setConfig({ background_color: value });
-            }
-          },
-          {
-            get: () => config.primary_color || defaultConfig.primary_color,
-            set: (value) => {
-              config.primary_color = value;
-              window.elementSdk.setConfig({ primary_color: value });
-            }
-          },
-          {
-            get: () => config.text_color || defaultConfig.text_color,
-            set: (value) => {
-              config.text_color = value;
-              window.elementSdk.setConfig({ text_color: value });
-            }
-          },
-          {
-            get: () => config.secondary_color || defaultConfig.secondary_color,
-            set: (value) => {
-              config.secondary_color = value;
-              window.elementSdk.setConfig({ secondary_color: value });
-            }
-          },
-          {
-            get: () => config.accent_color || defaultConfig.accent_color,
-            set: (value) => {
-              config.accent_color = value;
-              window.elementSdk.setConfig({ accent_color: value });
-            }
-          }
-        ],
-        borderables: [],
-        fontEditable: {
-          get: () => config.font_family || defaultConfig.font_family,
-          set: (value) => {
-            config.font_family = value;
-            window.elementSdk.setConfig({ font_family: value });
-          }
-        },
-        fontSizeable: {
-          get: () => config.font_size || defaultConfig.font_size,
-          set: (value) => {
-            config.font_size = value;
-            window.elementSdk.setConfig({ font_size: value });
-          }
-        }
-      };
-    }
-
-    function mapToEditPanelValues(config) {
-      return new Map([
-        ['main_title', config.main_title || defaultConfig.main_title],
-        ['button_text', config.button_text || defaultConfig.button_text],
-        ['status_text', config.status_text || defaultConfig.status_text]
-      ]);
-    }
-
-    if (window.elementSdk) {
-      window.elementSdk.init({
-        defaultConfig,
-        onConfigChange,
-        mapToCapabilities,
-        mapToEditPanelValues
-      });
-    }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c140163d1377aa7',t:'MTc2ODk2OTA4My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c14af35c0db273f',t:'MTc2ODk3NjIwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
